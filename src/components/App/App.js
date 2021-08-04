@@ -1,5 +1,7 @@
 import React, { useState}  from 'react';
+import { Route } from 'react-router-dom';
 import NavBar from '../NavBar/NavBar';
+import MainPage from '../MainPage/MainPage'
 import BreedType from '../BreedType/BreedType';
 import './App.css';
 
@@ -7,12 +9,9 @@ const App = () => {
   return (
     <div className="App">
       <header className="App-header">
-       <h1>
-         Doogle
-       </h1>
-       <NavBar />
+       <MainPage />
       </header>
-      <BreedType />
+      {/* <BreedType /> */}
     </div>
   );
 }
