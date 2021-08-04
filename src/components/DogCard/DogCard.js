@@ -1,9 +1,14 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './DogCard.css';
 
-const DogCard = () => {
+const DogCard = ({randomDog}) => {
   return (
-    <h1>This is where the card will go</h1>
+    <div>
+       <h1>This is where the card will go</h1>
+        <img src={randomDog} />
+    </div>
+   
   )
 }
 

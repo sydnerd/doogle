@@ -46,7 +46,7 @@ export default class App extends Component {
         </header>
         <Switch>
           <Route exact path="/">
-            <DogCard />
+            <DogCard randomDog = {this.state.randomDog}/>
           </Route>
           <Route path="/matches">
             <MatchList />
