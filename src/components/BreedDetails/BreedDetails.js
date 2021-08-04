@@ -1,10 +1,8 @@
-import { useState } from 'react-router-dom';
-import './BreedDetail.css'l
+// import { useState } from 'react-router-dom';
+import './BreedDetail.css';
 
 const BreedDetails = () => {
-  return (
-
-  )
+ 
 }
 
 export default BreedDetails;
