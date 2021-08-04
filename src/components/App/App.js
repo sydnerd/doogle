@@ -9,6 +9,7 @@ import './App.css';
 const App = () => {
   const [dogImages, setDogImages] = useState([]);
   const [randomDog, setRandomDog] = useState('');
+  const [error, setError] = useState('');
 
   return (
     <div className="App">
