@@ -26,8 +26,17 @@ export default class App extends Component {
 
   componentDidMount = () => {
     getDogImage()
-  .then((data)=> {this.setState({dogImages:data.message})})
+    .then((data)=> {
+      this.setState({dogImages:data.message})
+      this.randomizeDogImage()
+    })
   }
+
+  randomizeDogImage = () => {
+    const getRandomDog = this.state.dogImages[Math.floor(Math.random()* this.state.dogImages.length)]
+    this.setState({randomDog: getRandomDog})
+  }
+
   render() {
     return (
       <div className="App">
