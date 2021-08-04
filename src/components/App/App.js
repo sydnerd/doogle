@@ -8,7 +8,9 @@ const App = () => {
        <h1>
          Doogle
        </h1>
+       <NavBar />
       </header>
+      <BreedType />
     </div>
   );
 }
