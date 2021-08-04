@@ -1,17 +1,26 @@
 import React, { useState}  from 'react';
-import { Route } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import NavBar from '../NavBar/NavBar';
-import MainPage from '../MainPage/MainPage'
-import BreedType from '../BreedType/BreedType';
+import DogCard from '../DogCard/DogCard';
+import MatchList from '../MatchList/MatchList'
 import './App.css';
 
 const App = () => {
   return (
     <div className="App">
       <header className="App-header">
-       <MainPage />
+        <h1>Welcome to Doogle!</h1>
+        <NavBar />
       </header>
-      {/* <BreedType /> */}
+      <Switch>
+        <Route exact path="/">
+          <DogCard />
+        </Route>
+        <Route path="/matches">
+          <MatchList />
+        </Route>
+      </Switch>
+        
     </div>
   );
 }
