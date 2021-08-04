@@ -1,4 +1,6 @@
 import React, { useState}  from 'react';
+import NavBar from '../NavBar/NavBar';
+import BreedType from '../BreedType/BreedType';
 import './App.css';
 
 const App = () => {
