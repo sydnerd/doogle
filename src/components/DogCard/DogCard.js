@@ -1,9 +1,20 @@
 import React from 'react';
+import heart from '../../resources/heart.svg';
+import x from '../../resources/x.svg';
+// import logo from '../../resources/doogle_logo.png';
 import './DogCard.css';
 
-const DogCard = () => {
+const DogCard = ({randomDog}) => {
   return (
-    <h1>This is where the card will go</h1>
+    <div className='card-container'>
+       {/* <img className='logo-image' src={logo} alt='doogle logo'/> */}
+        <img className='dog-image'src={randomDog} alt="dog" />
+        <div className='icon-container'>
+          <img className='x icon'src={x}/>
+          <img className='heart icon'src={heart}/>
+        </div> 
+    </div>
+   
   )
 }
 

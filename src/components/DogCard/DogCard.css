@@ -1,0 +1,15 @@
+.card-container {
+  height: 40vw;
+  width: 30vw;
+  border: 5px solid black;
+  border-radius: 20px;
+}
+
+.dog-image {
+  height: 30vw;
+  width: 28vw;
+}
+
+.icon {
+  height: 4vw;
+}
