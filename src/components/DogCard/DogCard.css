@@ -6,6 +6,10 @@
 }
 
 .dog-image {
-  height: 25vw;
+  height: 30vw;
   width: 28vw;
+}
+
+.icon {
+  height: 4vw;
 }

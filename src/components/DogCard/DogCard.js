@@ -10,8 +10,8 @@ const DogCard = ({randomDog}) => {
        {/* <img className='logo-image' src={logo} alt='doogle logo'/> */}
         <img className='dog-image'src={randomDog} alt="dog" />
         <div className='icon-container'>
-          <img className='x'src={x}/>
-          <img className='heart'src={heart}/>
+          <img className='x icon'src={x}/>
+          <img className='heart icon'src={heart}/>
         </div> 
     </div>
    
