@@ -38,9 +38,9 @@ export default class App extends Component {
     this.setState({randomDog: getRandomDog})
   }
 
-  addMatch = (match) => {
-    if(!this.state.matches.includes(match)){
-      this.setState({match, ...this.state.matches})
+  addMatch = (matchedDog) => {
+    if(!this.state.matches.includes(matchedDog)){
+      this.setState({matchedDog, ...this.state.matches})
     }
   }
 
@@ -53,7 +53,7 @@ export default class App extends Component {
         </header>
         <Switch>
           <Route exact path="/">
-            <DogCard dog = {this.state.randomDog} addDog = {this.state.addDog}/>
+            <DogCard dog = {this.state.randomDog} addDog = {this.addMatch}/>
           </Route>
           <Route path="/matches">
             <DogCard dog = {this.state.matches} />
