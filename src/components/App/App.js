@@ -20,6 +20,7 @@ export default class App extends Component {
     this.state = {
       dogImages:[],
       randomDog:'',
+      matches:[],
       error:'',
     }
   }
@@ -37,6 +38,12 @@ export default class App extends Component {
     this.setState({randomDog: getRandomDog})
   }
 
+  addMatch = (matchedDog) => {
+    if(!this.state.matches.includes(matchedDog)){
+      this.setState({matchedDog, ...this.state.matches})
+    }
+  }
+
   render() {
     return (
       <div className="App">
@@ -46,10 +53,10 @@ export default class App extends Component {
         </header>
         <Switch>
           <Route exact path="/">
-            <DogCard randomDog = {this.state.randomDog}/>
+            <DogCard dog = {this.state.randomDog} addDog = {this.addMatch}/>
           </Route>
           <Route path="/matches">
-            <MatchList />
+            <DogCard dog = {this.state.matches} />
           </Route>
         </Switch>  
       </div>
