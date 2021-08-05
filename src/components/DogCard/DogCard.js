@@ -6,14 +6,13 @@ import './DogCard.css';
 
 const DogCard = ({randomDog}) => {
   return (
-    <div>
-       {/* <img src={logo} alt='doogle logo'/> */}
-        <img src={randomDog} alt="dog" />
-        <div>
-          <img className="heart"src={heart}/>
-          <img className="x"src={x}/>
-        </div>
-        
+    <div className='card-container'>
+       {/* <img className='logo-image' src={logo} alt='doogle logo'/> */}
+        <img className='dog-image'src={randomDog} alt="dog" />
+        <div className='icon-container'>
+          <img className='x'src={x}/>
+          <img className='heart'src={heart}/>
+        </div> 
     </div>
    
   )
