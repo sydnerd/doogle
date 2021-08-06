@@ -16,7 +16,7 @@ const App = () => {
       .then((data)=> {
         setRandomDog(data.message)
       })
-  },[])
+  },[matches])
 
   const addMatch = (matchedDog) => {
     console.log('matched dog app', matchedDog)
