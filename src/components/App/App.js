@@ -11,6 +11,7 @@ const App = () => {
   const [error, setError] = useState('');
 
   useEffect(() => {
+    console.log('here')
     getDogImage()
       .then((data)=> {
         setRandomDog(data.message)
@@ -18,15 +19,18 @@ const App = () => {
   },[])
 
   const addMatch = (matchedDog) => {
+    console.log('matched dog app', matchedDog)
     if(!matches.includes(matchedDog)){
-      setMatches({matchedDog, ...matches})
+      setMatches([matchedDog, ...matches])
     }
+    // setRandomDog('')
   }
 
   //need to add an else statement, if it does include it, render the dog
   //Need to add that it needs to do a new fetch once it is matched
   //need to render the matched dogs on the matched page
   //why doesn't it show the dog image for the matched dogs. 
+    const multipleDogs = matches.map((match, i) => <DogCard key = {i} dog = {matches} /> )
 
     return (
       <div className="App">
@@ -40,7 +44,7 @@ const App = () => {
             <DogCard dog = {randomDog} addDog = {addMatch}/>
           </Route>
           <Route path="/matches">
-            <DogCard dog = {matches} />
+            {multipleDogs}
           </Route>
         </Switch>  
       </div>
