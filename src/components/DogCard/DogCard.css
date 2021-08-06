@@ -12,4 +12,10 @@
 
 .icon {
   height: 4vw;
+  border: 5px solid lightgrey;
+  border-radius: 50%;
+}
+
+.icon:hover {
+  cursor: pointer;
 }
