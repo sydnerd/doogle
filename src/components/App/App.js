@@ -30,7 +30,7 @@ const App = () => {
   //Need to add that it needs to do a new fetch once it is matched
   //need to render the matched dogs on the matched page
   //why doesn't it show the dog image for the matched dogs. 
-    const multipleDogs = matches.map((match, i) => <DogCard key = {i} dog = {matches} /> )
+    const multipleDogs = matches.map((match, i) => <DogCard key = {i} dog = {match} /> )
 
     return (
       <div className="App">

@@ -16,7 +16,6 @@ const DogCard = ({dog, addDog}) => {
           <img className='heart icon'src={heart} onClick={() => addDog(dog)}/>
         </div> 
     </div>
-   
   )
 }
 
