@@ -35,11 +35,13 @@ const App = () => {
     return (
       <div className="app">
         <header className="App-header">
-          <h1>Welcome to Doogle!</h1>
-          <img className='logo' src={logo} />
+          <div className='title-container'>
+            <h1>Welcome to Doogle!</h1>
+            <img className='logo' src={logo} />
+          </div> 
           <NavBar />
         </header>
-        <main>
+        <section>
         <Switch>
           <Route exact path="/">
             <DogCard dog = {randomDog} addDog = {addMatch} removeDog = {removeDog}/>
@@ -48,7 +50,7 @@ const App = () => {
             {multipleDogs}
           </Route>
         </Switch> 
-        </main>
+        </section>
       </div>
     ); 
 }
