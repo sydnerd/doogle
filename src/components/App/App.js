@@ -37,6 +37,7 @@ const App = () => {
           <h1>Welcome to Doogle!</h1>
           <NavBar />
         </header>
+        <main>
         <Switch>
           <Route exact path="/">
             <DogCard dog = {randomDog} addDog = {addMatch} removeDog = {removeDog}/>
@@ -44,7 +45,8 @@ const App = () => {
           <Route path="/matches">
             {multipleDogs}
           </Route>
-        </Switch>  
+        </Switch> 
+        </main>
       </div>
     ); 
 }
