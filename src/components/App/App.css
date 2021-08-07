@@ -1,1 +1,19 @@
 /* background color idea: #F78072 */
+
+.app {
+ text-align: center;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  height: 10vw;
+}
+
+.title-container {
+  display: flex;
+  justify-content: center;
+}
