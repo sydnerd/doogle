@@ -2,6 +2,7 @@ import React, { useState, useEffect }  from 'react';
 import { Route, Switch } from 'react-router-dom';
 import NavBar from '../NavBar/NavBar';
 import DogCard from '../DogCard/DogCard';
+import MatchList from '../MatchList/MatchList';
 import { getDogImage } from '../../apiCalls';
 import logo from '../../resources/doogle_logo.png';
 import './App.css';
@@ -30,14 +31,14 @@ const App = () => {
     setRemovedDogs([dog, ...removedDogs])
   }
 
-  const multipleDogs = matches.map((match, i) => <DogCard key = {i} dog = {match} /> )
+  // const multipleDogs = matches.map((match, i) => <DogCard key = {i} dog = {match} /> )
 
     return (
       <div className="app">
         <header className="App-header">
           <div className='title-container'>
             <h1>Welcome to Doogle!</h1>
-            <img className='logo' src={logo} />
+            <img className='logo-image' src={logo} alt='doogle logo'/>
           </div> 
           <NavBar />
         </header>
@@ -47,7 +48,8 @@ const App = () => {
             <DogCard dog = {randomDog} addDog = {addMatch} removeDog = {removeDog}/>
           </Route>
           <Route path="/matches">
-            {multipleDogs}
+            {/* {multipleDogs} */}
+            <MatchList matches = {matches} />
           </Route>
         </Switch> 
         </section>
