@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import heart from '../../resources/heart.svg';
 import x from '../../resources/x.svg';
-// import logo from '../../resources/doogle_logo.png';
 import './DogCard.css';
 
 const DogCard = ({dog, addDog, removeDog}) => {

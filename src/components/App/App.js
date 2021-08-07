@@ -3,6 +3,7 @@ import { Route, Switch } from 'react-router-dom';
 import NavBar from '../NavBar/NavBar';
 import DogCard from '../DogCard/DogCard';
 import { getDogImage } from '../../apiCalls';
+import logo from '../../resources/doogle_logo.png';
 import './App.css';
 
 const App = () => {
@@ -35,6 +36,7 @@ const App = () => {
       <div className="app">
         <header className="App-header">
           <h1>Welcome to Doogle!</h1>
+          <img className='logo' src={logo} />
           <NavBar />
         </header>
         <main>
