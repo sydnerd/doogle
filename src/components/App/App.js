@@ -32,7 +32,7 @@ const App = () => {
   const multipleDogs = matches.map((match, i) => <DogCard key = {i} dog = {match} /> )
 
     return (
-      <div className="App">
+      <div className="app">
         <header className="App-header">
           <h1>Welcome to Doogle!</h1>
           <NavBar />
