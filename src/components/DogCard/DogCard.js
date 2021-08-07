@@ -11,8 +11,11 @@ const DogCard = ({dog, addDog, removeDog}) => {
        {/* <img className='logo-image' src={logo} alt='doogle logo'/> */}
         <img className='dog-image'src={dog} alt="dog" />
         <div className='icon-container'>
-          <img className='x icon'src={x} onClick={()=>removeDog(dog)}/>
-          <img className='heart icon'src={heart} onClick={() => addDog(dog)}/>
+          {/* <img className='x icon'src={x} onClick={()=>removeDog(dog)}/> */}
+          <span className='material-icons x icon' onClick={()=>removeDog(dog)}>close</span>
+          {/* <img className='heart icon'src={heart} onClick={() => addDog(dog)}/> */}
+          <span className='material-icons heart icon' onClick={()=>addDog(dog)}>favorite</span>
+
         </div> 
     </div>
   )

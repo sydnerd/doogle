@@ -3,6 +3,7 @@
   width: 30vw;
   border: 5px solid black;
   border-radius: 20px;
+  background-color: #F7F7F7;
 }
 
 .dog-image {
@@ -11,11 +12,19 @@
 }
 
 .icon {
-  height: 4vw;
-  border: 5px solid lightgrey;
+  font-size: 4vw;
+  border: 5px solid #F6F6F6;
   border-radius: 50%;
 }
 
 .icon:hover {
   cursor: pointer;
+}
+
+.heart {
+  color: #4EEBC4;
+}
+
+.x {
+  color: #F5596A;
 }
