@@ -15,7 +15,6 @@ const MatchList = ({matches, deleteMatch}) => {
   })
   return (
     <section className='matched-dogs-section'>
-      <h2>Matches</h2>
       {matchedDogs}
     </section>
   )
