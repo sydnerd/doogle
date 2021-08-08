@@ -1,7 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import heart from '../../resources/heart.svg';
-import x from '../../resources/x.svg';
 import './DogCard.css';
 
 const DogCard = ({dog, addDog, removeDog}) => {
@@ -18,4 +15,3 @@ const DogCard = ({dog, addDog, removeDog}) => {
 
 export default DogCard;
 
-{/* <img className='logo-image' src={logo} alt='doogle logo'/> */}

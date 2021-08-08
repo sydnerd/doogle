@@ -15,26 +15,13 @@
   margin-top: 1vw; ;
 }
 
-.icon {
+.delete {
   font-size: 4vw;
   border: 5px solid #F6F6F6;
   border-radius: 50%;
+  color: darkgray
 }
 
-.icon:hover {
+.delete:hover {
   cursor: pointer;
-}
-
-.heart {
-  color: #4EEBC4;
-  margin-left: 4vw;
-}
-
-.x {
-  color: #F5596A;
-}
-
-.icon-container {
-  display: flex;
-  /* justify-content: space-between; */
 }
