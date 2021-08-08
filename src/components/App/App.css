@@ -35,3 +35,17 @@ section {
 strong {
   color: goldenrod;
 }
+
+@media screen and (max-width: 620px) {
+  .title {
+    font-size: 10vw;
+  }
+
+  .tag-line {
+    font-size: 3vw;
+  }
+
+  .logo-image {
+    height: 15vw;
+  }
+}

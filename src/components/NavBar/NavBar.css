@@ -22,3 +22,10 @@ nav {
 .selected-title {
   border: 4px dashed white;
 }
+
+
+@media screen and (max-width: 620px) {
+  .nav-title {
+    font-size: 4vw;;
+  }
+}
