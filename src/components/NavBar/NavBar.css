@@ -22,6 +22,4 @@ nav {
 .selected-title {
   color:lightgrey;
   border: 4px dashed white;
-  /* border-right: 2px solid lightgrey;
-  border-left: 2px solid lightgrey; */
 }
