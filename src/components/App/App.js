@@ -45,6 +45,10 @@ const App = () => {
   }
 
   const noMatchMsg = !matches.length && <h2>No matches yet ☹️</h2>
+
+  const loadingDogs = !randomDog.length && !error.length && (
+    <h2>Loading dog image</h2>
+  )
     return (
       <div className="app">
         <header className="App-header">
