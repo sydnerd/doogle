@@ -10,14 +10,14 @@ const NavBar = () => {
         className='nav-title'
         activeClassName='selected-title'
       >
-        Find your Match 
+        Find Match 
       </NavLink>
       <NavLink
        exact to="/matches"
        className='nav-title'
        activeClassName='selected-title'
        >
-         Matches
+         Your Matches
       </NavLink>
     </nav>
   )
