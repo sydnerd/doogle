@@ -44,7 +44,7 @@ const App = () => {
     setMatches(updatedMatches)
   }
 
-  const noMatchMsg = !matches.length && <h2>No matches yet ☹️</h2>
+  const noMatchMsg = !matches.length && <h2 className='message'>No matches yet ☹️</h2>
 
     return (
       <div className="app">

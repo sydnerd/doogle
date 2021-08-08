@@ -36,6 +36,10 @@ strong {
   color: goldenrod;
 }
 
+.message {
+  color: #F78072;
+}
+
 @media screen and (max-width: 620px) {
   .title {
     font-size: 10vw;
