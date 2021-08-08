@@ -27,6 +27,7 @@
 
 .heart {
   color: #4EEBC4;
+  margin-left: 4vw;
 }
 
 .x {
@@ -35,5 +36,5 @@
 
 .icon-container {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }

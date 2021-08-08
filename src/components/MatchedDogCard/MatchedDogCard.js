@@ -1,13 +1,12 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import './MatchedDogCard.css';
 
-const MatchedDogCard = ({dog}) => {
+const MatchedDogCard = ({dog, id, deleteMatch}) => {
   return (
     <div className='card-container'>
       <img className='dog-image'src={dog} alt="dog" />
         <div className='icon-container'>
-        <span className="material-icons delete">delete</span>
+        <span className="material-icons delete" id={id} onClick={() => deleteMatch(id)}>delete</span>
         </div> 
     </div>
   )

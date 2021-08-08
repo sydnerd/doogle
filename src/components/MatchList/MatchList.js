@@ -2,14 +2,14 @@ import React from 'react';
 import './MatchList.css';
 import MatchedDogCard from '../MatchedDogCard/MatchedDogCard'
 
-const MatchList = ({matches, dog}) => {
+const MatchList = ({matches, deleteMatch}) => {
   const matchedDogs = matches.map((match, i) => {
-    console.log("matches", matches)
-    console.log("match", match)
     return (
       <MatchedDogCard
         key = {i}
+        id = {i}
         dog = {match}
+        deleteMatch = {deleteMatch}
       /> 
     )   
   })

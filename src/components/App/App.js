@@ -11,7 +11,7 @@ const App = () => {
   const [randomDog, setRandomDog] = useState('');
   const [matches, setMatches] = useState([]);
   const[removedDogs, setRemovedDogs] = useState([])
-  const [error, setError] = useState('');
+  // const [error, setError] = useState('');
 
   useEffect(() => {
     getDogImage()
@@ -22,17 +22,16 @@ const App = () => {
 
   const addMatch = (matchedDog) => {
     if(!matches.includes(matchedDog)){
-      setMatches([matchedDog, ...matches])
+      setMatches([...matches, matchedDog])
     }
-    // setRandomDog('')
   }
-  //
+  
   const removeDog = (dog) => {
     setRemovedDogs([dog, ...removedDogs])
   }
 
-  deleteMatch = (event) => {
-    const updatedMatches = matches.filter(match => match.id !=id)
+  const deleteMatch = (event) => {
+    const updatedMatches = matches.filter(match => match.key !==event.target.id)
     setMatches(updatedMatches)
   }
 
@@ -51,8 +50,7 @@ const App = () => {
             <DogCard dog = {randomDog} addDog = {addMatch} removeDog = {removeDog}/>
           </Route>
           <Route path="/matches">
-            {/* {multipleDogs} */}
-            <MatchList matches = {matches} />
+            <MatchList matches = {matches} deleteMatch = {deleteMatch}/>
           </Route>
         </Switch> 
         </section>
