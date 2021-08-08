@@ -4,10 +4,12 @@ import MatchedDogCard from '../MatchedDogCard/MatchedDogCard'
 
 const MatchList = ({matches, dog}) => {
   const matchedDogs = matches.map((match, i) => {
+    console.log("matches", matches)
+    console.log("match", match)
     return (
       <MatchedDogCard
         key = {i}
-        image = {match}
+        dog = {match}
       /> 
     )   
   })
