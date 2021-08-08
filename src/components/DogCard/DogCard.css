@@ -28,3 +28,14 @@
 .icon-container {
   display: flex;
 }
+
+@media screen and (max-width: 620px) {
+  .icon {
+    font-size: 8vw;
+    margin-top: 4vw;
+  }
+  
+  .heart {
+    margin-left: 10vw;
+  }
+}
