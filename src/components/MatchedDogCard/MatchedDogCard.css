@@ -1,6 +1,6 @@
 .card-container {
-  height: 30vw;
-  width: 20vw;
+  height: 35vw;
+  width: 25vw;
   border: 5px solid lightgrey;
   border-radius: 20px;
   display: flex;
@@ -10,8 +10,8 @@
 }
 
 .dog-image {
-  height: 20vw;
-  width: 18vw;
+  height: 25vw;
+  width: 23vw;
   margin-top: 1vw; ;
 }
 

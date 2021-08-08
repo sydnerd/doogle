@@ -25,3 +25,13 @@ section {
   color: #F78072;
   margin-bottom: 0px;
 }
+
+.tag-line {
+  color: #F78072;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+strong {
+  color: goldenrod;
+}

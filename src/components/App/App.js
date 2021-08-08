@@ -51,7 +51,10 @@ const App = () => {
         <header className="App-header">
           <div className='title-container'>
             <h1 className="title">doogle</h1>
-            <img className='logo-image' src={logo} alt='doogle logo'/>
+            <div>
+              <img className='logo-image' src={logo} alt='doogle logo'/>
+              <p className='tag-line'>find your <strong>golden</strong> match</p>
+            </div>
           </div> 
           <NavBar />
         </header>
