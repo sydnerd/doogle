@@ -27,11 +27,15 @@ const App = () => {
   }
   
   const removeDog = (dog) => {
-    setRemovedDogs([dog, ...removedDogs])
+    setRemovedDogs([...removedDogs, dog])
   }
 
   const deleteMatch = (event) => {
-    const updatedMatches = matches.filter(match => match.key !==event.target.id)
+    const updatedMatches = matches.filter((match, i) =>{
+      if(i !== parseFloat(event.target.id)) {
+        return match
+      }
+    })
     setMatches(updatedMatches)
   }
 
@@ -50,7 +54,7 @@ const App = () => {
             <DogCard dog = {randomDog} addDog = {addMatch} removeDog = {removeDog}/>
           </Route>
           <Route path="/matches">
-            <MatchList matches = {matches} deleteMatch = {deleteMatch}/>
+            <MatchList matches = {matches} deleteMatch = {deleteMatch} />
           </Route>
         </Switch> 
         </section>

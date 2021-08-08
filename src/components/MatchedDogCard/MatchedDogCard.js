@@ -6,7 +6,7 @@ const MatchedDogCard = ({dog, id, deleteMatch}) => {
     <div className='card-container'>
       <img className='dog-image'src={dog} alt="dog" />
         <div className='icon-container'>
-        <span className="material-icons delete" id={id} onClick={() => deleteMatch(id)}>delete</span>
+        <span className="material-icons delete" id={id} onClick ={(id) => deleteMatch(id)}>delete</span>
         </div> 
     </div>
   )
