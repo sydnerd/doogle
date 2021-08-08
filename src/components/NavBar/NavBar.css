@@ -10,6 +10,18 @@ nav {
 
 .nav-title {
   font-size: 1.75vw;
+  margin:2px;
+  padding: 2px;
 }
 
-.
+.nav-title:hover {
+  transform: scale(1.3);
+  color: lightgrey;
+}
+
+.selected-title {
+  color:lightgrey;
+  border: 4px dashed white;
+  /* border-right: 2px solid lightgrey;
+  border-left: 2px solid lightgrey; */
+}
