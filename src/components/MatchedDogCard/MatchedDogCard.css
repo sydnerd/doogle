@@ -14,3 +14,14 @@
   width: 28vw;
   margin-top: 1vw; ;
 }
+
+.delete {
+  font-size: 4vw;
+  border: 5px solid #F6F6F6;
+  border-radius: 50%;
+  color: darkgray
+}
+
+.delete:hover {
+  cursor: pointer;
+}
