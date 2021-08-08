@@ -1,0 +1,15 @@
+nav {
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 0px;
+  border-bottom: 2px solid white;
+  border-top: 2px solid white;
+  background: #F78072;
+}
+
+.nav-title {
+  font-size: 1.75vw;
+}
+
+.

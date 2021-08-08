@@ -5,8 +5,20 @@ import './NavBar.css';
 const NavBar = () => {
   return (
     <nav>
-      <NavLink exact to="/">Find your Match </NavLink>
-      <NavLink exact to="/matches">Matches</NavLink>
+      <NavLink 
+        exact to="/"
+        className='nav-title'
+        activeClassName='selected-title'
+      >
+        Find your Match 
+      </NavLink>
+      <NavLink
+       exact to="/matches"
+       className='nav-title'
+       activeClassName='selected-title'
+       >
+         Matches
+      </NavLink>
     </nav>
   )
 }
