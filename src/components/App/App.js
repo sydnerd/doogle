@@ -1,5 +1,5 @@
 import React, { useState, useEffect }  from 'react';
-import { Route, Switch } from 'react-router-dom';
+import { Route, Switch, Redirect } from 'react-router-dom';
 import NavBar from '../NavBar/NavBar';
 import DogCard from '../DogCard/DogCard';
 import MatchList from '../MatchList/MatchList';
@@ -11,13 +11,18 @@ const App = () => {
   const [randomDog, setRandomDog] = useState('');
   const [matches, setMatches] = useState([]);
   const[removedDogs, setRemovedDogs] = useState([])
-  // const [error, setError] = useState('');
+  const [error, setError] = useState('');
 
   useEffect(() => {
     getDogImage()
       .then((data)=> {
         setRandomDog(data.message)
       })
+      .catch(() => 
+        setError(
+          "We're experiencing server technical difficulties, please check back again later!"
+        )
+      );
   },[matches, removedDogs])
 
   const addMatch = (matchedDog) => {
@@ -31,7 +36,7 @@ const App = () => {
   }
 
   const deleteMatch = (event) => {
-    const updatedMatches = matches.filter((match, i) =>{
+    const updatedMatches = matches.filter((match, i) => {
       if(i !== parseFloat(event.target.id)) {
         return match
       }
@@ -39,6 +44,11 @@ const App = () => {
     setMatches(updatedMatches)
   }
 
+  const noMatchMsg = !matches.length && <h2>No matches yet ☹️</h2>
+
+  const loadingDogs = !randomDog.length && !error.length && (
+    <h2>Loading dog image</h2>
+  )
     return (
       <div className="app">
         <header className="App-header">
@@ -49,14 +59,17 @@ const App = () => {
           <NavBar />
         </header>
         <section>
-        <Switch>
-          <Route exact path="/">
-            <DogCard dog = {randomDog} addDog = {addMatch} removeDog = {removeDog}/>
-          </Route>
-          <Route path="/matches">
-            <MatchList matches = {matches} deleteMatch = {deleteMatch} />
-          </Route>
-        </Switch> 
+          <Switch>
+            <Route exact path="/">
+              {!!error.length && <h2>{error}</h2>}
+              <DogCard dog = {randomDog} addDog = {addMatch} removeDog = {removeDog}/>
+            </Route>
+            <Route path="/matches">
+              {noMatchMsg}
+              <MatchList matches = {matches} deleteMatch = {deleteMatch} />
+            </Route>
+          </Switch>
+          <Redirect to={"/"} />
         </section>
       </div>
     ); 
