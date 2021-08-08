@@ -31,7 +31,10 @@ const App = () => {
     setRemovedDogs([dog, ...removedDogs])
   }
 
-  // const multipleDogs = matches.map((match, i) => <DogCard key = {i} dog = {match} /> )
+  deleteMatch = (event) => {
+    const updatedMatches = matches.filter(match => match.id !=id)
+    setMatches(updatedMatches)
+  }
 
     return (
       <div className="app">
