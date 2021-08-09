@@ -32,19 +32,19 @@
 /* MOBILE*/
 @media screen and (max-width: 620px) {
   .card-container {
-    height: 70vw;
-    width: 55vw;
-    margin-top: 5vw;
+    height: 105vw;
+    width: 75vw;
+    margin-top: 10vw;
   }
 
   .dog-image {
-    height: 50vw;
-    width: 48vw;
+    height: 75vw;
+    width: 65vw;
     margin-top: 2vw; ;
   }
   .delete {
-    font-size: 8vw;
-    margin-top: 4vw;
+    font-size: 12vw;
+    margin-top: 6vw;
   }
 }
 
