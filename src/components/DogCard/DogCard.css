@@ -31,8 +31,8 @@
 
 @media screen and (max-width: 620px) {
   .icon {
-    font-size: 8vw;
-    margin-top: 4vw;
+    font-size: 12vw;
+    margin-top: 6vw;
   }
 
   .heart {
@@ -42,8 +42,8 @@
 
 @media screen and (min-width: 620px) and (max-width:1200px) {
   .icon {
-    font-size: 7vw;
-    margin-top: 2vw;
+    font-size: 10vw;
+    margin-top: 4vw;
   }
 
   .heart {

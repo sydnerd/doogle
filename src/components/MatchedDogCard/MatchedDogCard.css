@@ -32,29 +32,38 @@
 /* MOBILE*/
 @media screen and (max-width: 620px) {
   .card-container {
-    height: 70vw;
-    width: 55vw;
-    margin-top: 25vw;;
+    height: 105vw;
+    width: 75vw;
+    margin-top: 10vw;
   }
 
   .dog-image {
-    height: 50vw;
-    width: 48vw;
-    margin-top: 2vw; ;
+    height: 75vw;
+    width: 65vw;
+    margin-top: 2vw; 
+  }
+  .delete {
+    font-size: 12vw;
+    margin-top: 6vw;
   }
 }
 
 /* SMALL TABLET  */
 @media screen and (min-width: 620px) and (max-width:1200px) {
   .card-container {
-    height: 60vw;
-    width: 45vw;
-    margin-top: 8vw;;
+    height: 90vw;
+    width: 75vw;
+    margin-top: 10vw;
   }
 
   .dog-image {
-    height: 45vw;
-    width: 38vw;
-    margin-top: 2vw; ;
+    height: 65vw;
+    width: 65vw;
+    margin-top: 2vw; 
+  }
+
+  .delete {
+    font-size: 10vw;
+    margin-top: 4vw;
   }
  }
