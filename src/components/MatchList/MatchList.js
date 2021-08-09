@@ -22,3 +22,8 @@ const MatchList = ({matches, deleteMatch}) => {
 }
 
 export default MatchList 
+
+MatchList.propTypes = {
+  matches: PropTypes.array,
+  deleteMatch: PropTypes.func
+}
