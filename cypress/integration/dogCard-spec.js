@@ -23,7 +23,7 @@ describe('Dog Card', () => {
         .click()
     })
 
-    it('Should add dog card to matches when heart is clicked', () => {
+    it('Should add dog card to your matches when heart is clicked', () => {
       cy.get('.heart')
         .click()
       cy.get('.your-matches')

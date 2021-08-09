@@ -61,7 +61,7 @@ const App = () => {
         <section>
           <Switch>
             <Route exact path="/">
-              {!!error.length && <h2>{error}</h2>}
+              {!!error.length && <h2 className='error'>{error}</h2>}
               <DogCard dog = {randomDog} addDog = {addMatch} removeDog = {removeDog}/>
             </Route>
             <Route path="/matches">
