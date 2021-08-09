@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/doogle/static/css/main.66561355.chunk.css",
+    "main.css": "/doogle/static/css/main.1e8f5e26.chunk.css",
     "main.js": "/doogle/static/js/main.bc31cf28.chunk.js",
     "main.js.map": "/doogle/static/js/main.bc31cf28.chunk.js.map",
     "runtime-main.js": "/doogle/static/js/runtime-main.a2043cca.js",
@@ -10,14 +10,14 @@
     "static/js/3.afca1963.chunk.js": "/doogle/static/js/3.afca1963.chunk.js",
     "static/js/3.afca1963.chunk.js.map": "/doogle/static/js/3.afca1963.chunk.js.map",
     "index.html": "/doogle/index.html",
-    "static/css/main.66561355.chunk.css.map": "/doogle/static/css/main.66561355.chunk.css.map",
+    "static/css/main.1e8f5e26.chunk.css.map": "/doogle/static/css/main.1e8f5e26.chunk.css.map",
     "static/js/2.aa0ee5c3.chunk.js.LICENSE.txt": "/doogle/static/js/2.aa0ee5c3.chunk.js.LICENSE.txt",
     "static/media/doogle_logo.af2cd048.png": "/doogle/static/media/doogle_logo.af2cd048.png"
   },
   "entrypoints": [
     "static/js/runtime-main.a2043cca.js",
     "static/js/2.aa0ee5c3.chunk.js",
-    "static/css/main.66561355.chunk.css",
+    "static/css/main.1e8f5e26.chunk.css",
     "static/js/main.bc31cf28.chunk.js"
   ]
 }
