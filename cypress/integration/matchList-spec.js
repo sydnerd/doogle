@@ -12,5 +12,12 @@ describe('Match List', () => {
     cy.get('.card-container')
       .get('.dog-image').should('exist').should('be.visible')
       .get('.delete').should('exist').should('be.visible')
-  })
+  });
+
+  it('Should remove the dog card when delete button is clicked', () => {
+    cy.get('.delete')
+      .click()
+    cy.get('.message')
+      .contains('No matches yet ☹️')
+  });
 })
