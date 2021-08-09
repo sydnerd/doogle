@@ -1,5 +1,6 @@
 import React from 'react';
 import './DogCard.css';
+import PropTypes from 'prop-types';
 
 const DogCard = ({dog, addDog, removeDog}) => {
   return (
@@ -15,3 +16,8 @@ const DogCard = ({dog, addDog, removeDog}) => {
 
 export default DogCard;
 
+DogCard.propTypes = {
+  dog: PropTypes.string,
+  addDog: PropTypes.func,
+  removeDog: PropTypes.func
+}
