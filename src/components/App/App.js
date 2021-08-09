@@ -44,6 +44,10 @@ const App = () => {
     setMatches(updatedMatches)
   }
 
+  const loadingMsg = !randomDog.length && !error.length && (
+    <h2 className='loading-message'>Loading image</h2>
+  );
+
   const noMatchMsg = !matches.length && <h2 className='message'>No matches yet ☹️</h2>
 
     return (
@@ -61,6 +65,7 @@ const App = () => {
         <section>
           <Switch>
             <Route exact path="/">
+              {loadingMsg}
               {!!error.length && <h2 className='error'>{error}</h2>}
               <DogCard dog = {randomDog} addDog = {addMatch} removeDog = {removeDog}/>
             </Route>

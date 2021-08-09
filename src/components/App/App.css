@@ -36,8 +36,9 @@ strong {
   color: goldenrod;
 }
 
-.message, .error {
+.message, .error, .loading-message {
   color: #F78072;
+  margin-right: 10vw;
 }
 
 @media screen and (max-width: 620px) {

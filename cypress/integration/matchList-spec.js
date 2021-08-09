@@ -14,7 +14,7 @@ describe('Match List', () => {
       .get('.delete').should('exist').should('be.visible')
   });
 
-  it('Should remove the dog card when delete button is clicked', () => {
+  it('Should remove the dog card when delete button is clicked and show a message', () => {
     cy.get('.delete')
       .click()
     cy.get('.message')
