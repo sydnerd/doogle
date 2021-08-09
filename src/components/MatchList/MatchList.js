@@ -1,6 +1,7 @@
 import React from 'react';
 import './MatchList.css';
-import MatchedDogCard from '../MatchedDogCard/MatchedDogCard'
+import MatchedDogCard from '../MatchedDogCard/MatchedDogCard';
+import PropTypes from 'prop-types';
 
 const MatchList = ({matches, deleteMatch}) => {
   const matchedDogs = matches.map((match, i) => {

@@ -1,5 +1,6 @@
 import React from 'react';
 import './MatchedDogCard.css';
+import PropTypes from 'prop-types';
 
 const MatchedDogCard = ({dog, id, deleteMatch}) => {
   return (
@@ -13,4 +14,10 @@ const MatchedDogCard = ({dog, id, deleteMatch}) => {
 }
 
 export default MatchedDogCard;
+
+MatchedDogCard.propTypes = {
+  dog: PropTypes.string,
+  id: PropTypes.number,
+  deleteMatch: PropTypes.func
+}
 
