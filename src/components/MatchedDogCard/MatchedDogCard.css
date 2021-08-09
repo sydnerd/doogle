@@ -40,7 +40,7 @@
   .dog-image {
     height: 75vw;
     width: 65vw;
-    margin-top: 2vw; ;
+    margin-top: 2vw; 
   }
   .delete {
     font-size: 12vw;
@@ -51,19 +51,19 @@
 /* SMALL TABLET  */
 @media screen and (min-width: 620px) and (max-width:1200px) {
   .card-container {
-    height: 60vw;
-    width: 45vw;
-    margin-top: 8vw;;
+    height: 90vw;
+    width: 75vw;
+    margin-top: 10vw;
   }
 
   .dog-image {
-    height: 45vw;
-    width: 38vw;
-    margin-top: 2vw; ;
+    height: 65vw;
+    width: 65vw;
+    margin-top: 2vw; 
   }
 
   .delete {
-    font-size: 7vw;
-    margin-top: 2vw;
+    font-size: 10vw;
+    margin-top: 4vw;
   }
  }
