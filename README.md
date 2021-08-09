@@ -18,12 +18,12 @@ This application is a play on the very popular dating website called Tinder. How
 
 ## Table of Contents
 
-- [Contributors](https://github.com/sydnerd/doogle#contributors)
+- [Contributor](https://github.com/sydnerd/doogle#contributors)
 - [Learning Goals](https://github.com/sydnerd/doogle#learning-goals)
 - [How to use the app](https://github.com/sydnerd/doogle#app-setup)
 - [Future Additions](https://github.com/sydnerd/doogle#future-additions--reflections)
  
-## Contributors
+## Contributor
 <table>
   <tr>
     <td align="center" > <a href="https://github.com/sydnerd">Sydney Bear</td>
