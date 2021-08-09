@@ -53,7 +53,7 @@ const App = () => {
             <h1 className="title">doogle</h1>
             <div>
               <img className='logo-image' src={logo} alt='doogle logo'/>
-              <p className='tag-line'>discover your <strong>golden</strong> match</p>
+              <p className='tag-line'>discover your <strong>golden</strong></p>
             </div>
           </div> 
           <NavBar />
