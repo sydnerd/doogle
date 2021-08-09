@@ -34,8 +34,19 @@
     font-size: 8vw;
     margin-top: 4vw;
   }
-  
+
   .heart {
     margin-left: 10vw;
   }
 }
+
+@media screen and (min-width: 620px) and (max-width:1200px) {
+  .icon {
+    font-size: 7vw;
+    margin-top: 2vw;
+  }
+
+  .heart {
+    margin-left: 10vw;
+  }
+ }
