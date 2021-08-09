@@ -1,7 +1,9 @@
-/* background color idea: #F78072 */
+
 
 .app {
  text-align: center;
+ min-height: 100vh;
+
 }
 
 section {
@@ -17,3 +19,51 @@ section {
   display: flex;
   justify-content: center;
 }
+
+.title {
+  font-size: 6vw;
+  color: #F78072;
+  margin-bottom: 0px;
+}
+
+.tag-line {
+  color: #F78072;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+strong {
+  color: goldenrod;
+}
+
+.message {
+  color: #F78072;
+}
+
+@media screen and (max-width: 620px) {
+  .title {
+    font-size: 10vw;
+  }
+
+  .tag-line {
+    font-size: 3vw;
+  }
+
+  .logo-image {
+    height: 15vw;
+  }
+}
+
+@media screen and (min-width: 620px) and (max-width:1200px) {
+  .title {
+    font-size: 11vw;
+  }
+
+  .tag-line {
+    font-size: 2.5vw;
+  }
+
+  .logo-image {
+    height: 15vw;
+  }
+ }

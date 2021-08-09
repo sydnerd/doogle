@@ -1,17 +1,6 @@
-.card-container {
-  height: 40vw;
-  width: 30vw;
-  border: 5px solid lightgrey;
-  border-radius: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 8vw;
-}
-
 .dog-image {
-  height: 30vw;
-  width: 28vw;
+  height: 5vw;
+  width: 18vw;
   margin-top: 1vw; ;
 }
 
@@ -19,15 +8,17 @@
   font-size: 4vw;
   border: 5px solid #F6F6F6;
   border-radius: 50%;
+  margin-top: 2vw;
 }
 
 .icon:hover {
   cursor: pointer;
+  opacity: 70%;
 }
 
 .heart {
   color: #4EEBC4;
-  margin-left: 4vw;
+  margin-left: 7vw;
 }
 
 .x {
@@ -36,5 +27,26 @@
 
 .icon-container {
   display: flex;
-  /* justify-content: space-between; */
 }
+
+@media screen and (max-width: 620px) {
+  .icon {
+    font-size: 8vw;
+    margin-top: 4vw;
+  }
+
+  .heart {
+    margin-left: 10vw;
+  }
+}
+
+@media screen and (min-width: 620px) and (max-width:1200px) {
+  .icon {
+    font-size: 7vw;
+    margin-top: 2vw;
+  }
+
+  .heart {
+    margin-left: 10vw;
+  }
+ }

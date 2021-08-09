@@ -1,17 +1,17 @@
 .card-container {
-  height: 40vw;
-  width: 30vw;
+  height: 35vw;
+  width: 25vw;
   border: 5px solid lightgrey;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 8vw;
+  margin-top: 3vw;
 }
 
 .dog-image {
-  height: 30vw;
-  width: 28vw;
+  height: 25vw;
+  width: 23vw;
   margin-top: 1vw; ;
 }
 
@@ -19,9 +19,42 @@
   font-size: 4vw;
   border: 5px solid #F6F6F6;
   border-radius: 50%;
-  color: darkgray
+  color: darkgray;
+  margin-top: 2vw;
+
 }
 
 .delete:hover {
   cursor: pointer;
+  opacity: 70%;
 }
+
+/* MOBILE*/
+@media screen and (max-width: 620px) {
+  .card-container {
+    height: 70vw;
+    width: 55vw;
+    margin-top: 25vw;;
+  }
+
+  .dog-image {
+    height: 50vw;
+    width: 48vw;
+    margin-top: 2vw; ;
+  }
+}
+
+/* SMALL TABLET  */
+@media screen and (min-width: 620px) and (max-width:1200px) {
+  .card-container {
+    height: 60vw;
+    width: 45vw;
+    margin-top: 8vw;;
+  }
+
+  .dog-image {
+    height: 45vw;
+    width: 38vw;
+    margin-top: 2vw; ;
+  }
+ }

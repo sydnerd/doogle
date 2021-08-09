@@ -44,17 +44,17 @@ const App = () => {
     setMatches(updatedMatches)
   }
 
-  const noMatchMsg = !matches.length && <h2>No matches yet ☹️</h2>
+  const noMatchMsg = !matches.length && <h2 className='message'>No matches yet ☹️</h2>
 
-  const loadingDogs = !randomDog.length && !error.length && (
-    <h2>Loading dog image</h2>
-  )
     return (
       <div className="app">
         <header className="App-header">
           <div className='title-container'>
-            <h1>Welcome to Doogle!</h1>
-            <img className='logo-image' src={logo} alt='doogle logo'/>
+            <h1 className="title">doogle</h1>
+            <div>
+              <img className='logo-image' src={logo} alt='doogle logo'/>
+              <p className='tag-line'>discover your <strong>golden</strong> match</p>
+            </div>
           </div> 
           <NavBar />
         </header>
