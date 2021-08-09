@@ -16,12 +16,29 @@ describe('Dog Card', () => {
     it('Should have a clickable x button', () => {
       cy.get('.x')
         .click()
-        .url('http://localhost:3000/matches')
     })
 
     it('Should have a clickable heart button', () => {
       cy.get('.heart')
         .click()
-        .url('http://localhost:3000/matches')
     })
+
+    it('Should add dog card to matches when heart is clicked', () => {
+      cy.get('.heart')
+        .click()
+      cy.get('.your-matches')
+        .click()
+      cy.get('.card-container')
+        .get('.dog-image').should('exist').should('be.visible')
+        .get('.delete').should('exist').should('be.visible')
+    })
+
+    it('Should change dog image when x button is clicked', () => {
+      cy.get('.x')
+        .click()
+      cy.fixture('dogImageMockData2').then((testDogImage2) => {
+        cy.intercept('https://dog.ceo/api/breed/retriever/golden/images/random', testDogImage2)
+      })
+    })
+    
 })

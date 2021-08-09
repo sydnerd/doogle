@@ -13,6 +13,15 @@ describe('Nav Bar', () => {
       .url('http://localhos:3000/')
   })
 
+  it('Should contain a dog card with image, x button and heart button when find match is clicked', () => {
+    cy.get('.find-match')
+      .click()
+      .get('.card-container')
+      .get('.dog-image').should('exist').should('be.visible')
+      .get('.x').should('exist').should('be.visible')
+      .get('.heart').should('exist').should('be.visible')
+  })
+
   it('Should contain a link to a list of all matches', () => {
     cy.get('nav')
       .contains('Your Matches')
