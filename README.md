@@ -9,7 +9,8 @@ This application is a play on the very popular dating website called Tinder. How
 ## [View App Here!](https://sydnerd.github.io/doogle/)
 
 <p align="center"><img src=https://user-images.githubusercontent.com/78241098/128749056-58ea430f-3b78-430d-bc6d-7d9034c8d8d3.gif ></p>
-
+</br>
+</br>
 <p>
   <img width=40% src=https://user-images.githubusercontent.com/78241098/128749184-370f1c1b-d6e0-4441-af8d-2c4185c44142.png>
   <img height=250px src=https://user-images.githubusercontent.com/78241098/128773510-c80c960c-8bee-4c98-826f-0230664b0d1a.png>
