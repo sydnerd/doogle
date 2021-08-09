@@ -44,6 +44,10 @@ const App = () => {
     setMatches(updatedMatches)
   }
 
+  const loadingMsg = !randomDog.length && !error.length && (
+    <h2 className='loading-message'>Loading image</h2>
+  );
+
   const noMatchMsg = !matches.length && <h2 className='message'>No matches yet ☹️</h2>
 
     return (
@@ -53,7 +57,7 @@ const App = () => {
             <h1 className="title">doogle</h1>
             <div>
               <img className='logo-image' src={logo} alt='doogle logo'/>
-              <p className='tag-line'>discover your <strong>golden</strong> match</p>
+              <p className='tag-line'>discover your <strong>golden</strong></p>
             </div>
           </div> 
           <NavBar />
@@ -61,7 +65,8 @@ const App = () => {
         <section>
           <Switch>
             <Route exact path="/">
-              {!!error.length && <h2>{error}</h2>}
+              {loadingMsg}
+              {!!error.length && <h2 className='error'>{error}</h2>}
               <DogCard dog = {randomDog} addDog = {addMatch} removeDog = {removeDog}/>
             </Route>
             <Route path="/matches">

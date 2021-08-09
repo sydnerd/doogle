@@ -7,14 +7,14 @@ const NavBar = () => {
     <nav>
       <NavLink 
         exact to="/"
-        className='nav-title'
+        className='nav-title find-match'
         activeClassName='selected-title'
       >
         Find Match 
       </NavLink>
       <NavLink
        exact to="/matches"
-       className='nav-title'
+       className='nav-title your-matches'
        activeClassName='selected-title'
        >
          Your Matches
