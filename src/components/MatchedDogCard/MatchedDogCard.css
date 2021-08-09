@@ -42,6 +42,10 @@
     width: 48vw;
     margin-top: 2vw; ;
   }
+  .delete {
+    font-size: 8vw;
+    margin-top: 4vw;
+  }
 }
 
 /* SMALL TABLET  */
@@ -56,5 +60,10 @@
     height: 45vw;
     width: 38vw;
     margin-top: 2vw; ;
+  }
+
+  .delete {
+    font-size: 7vw;
+    margin-top: 2vw;
   }
  }
